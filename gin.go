@@ -37,7 +37,7 @@ func main() {
 	if err != nil {
 		panic("Failed to connect to database!")
 	} else {
-		log.Println("Connection Established")
+		log.Println("Connection Established!")
 		// Get the first record ordered by primary key
 
 	}
