@@ -22,11 +22,6 @@ func main() {
 
 	r := gin.Default()
 
-	// USER := os.Getenv("MYSQL_USER")
-	// PASS := os.Getenv("MYSQL_PASSWORD")
-	// HOST := os.Getenv("MYSQL_HOST")
-	// DBNAME := os.Getenv("MYSQL_DB")
-
 	USER := "root"
 	PASS := "secret"
 	HOST := "mysql"
@@ -60,4 +55,11 @@ func GetProducts(c *gin.Context) {
 	} else {
 		c.JSON(200, products)
 	}
+}
+
+func IntMin(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
